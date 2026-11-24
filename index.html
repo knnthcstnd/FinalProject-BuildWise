@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="BuildWise PC smart computer parts store and budget-based build recommender.">
+  <title>BuildWise PC</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <a class="brand" href="#home" aria-label="BuildWise PC home">
+      <span class="brand-mark">BW</span>
+      <span>BuildWise <b>PC</b></span>
+    </a>
+
+    <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="mainNav">
+      ☰
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#builder">Build Finder</a>
+      <a href="#shop" id="dealsLink">Deals</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <button class="icon-button" id="searchButton" aria-label="Search">
+        ⌕
+      </button>
+
+      <a class="cart-link" href="#cart" aria-label="Shopping cart">
+        Cart <span id="cartCount">0</span>
+      </a>
+
+      <a href="#login" class="login-button">
+        Log In
+      </a>
+
+      <a href="#signup" class="signup-button">
+        Sign Up
+      </a>
+
+    </div>
+
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="site-footer">
+
+    <div>
+      <a class="brand" href="#home">
+        <span class="brand-mark">BW</span>
+        <span>BuildWise <b>PC</b></span>
+      </a>
+
+      <p>Build smart. Game better. Stay within budget.</p>
+    </div>
+
+    <div>
+      <h3>Shop</h3>
+      <a href="#shop">Components</a>
+      <a href="#builder">Smart Build Finder</a>
+    </div>
+
+    <div>
+      <h3>Help</h3>
+      <a href="#home">Shipping</a>
+      <a href="#home">Compatibility guide</a>
+    </div>
+
+    <div>
+      <h3>Stay updated</h3>
+
+      <form id="newsletter">
+        <label class="sr-only" for="emailNews">Email</label>
+
+        <div class="inline-field">
+          <input
+            id="emailNews"
+            type="email"
+            placeholder="Email address"
+            required
+          >
+
+          <button>Join</button>
+        </div>
+
+      </form>
+    </div>
+
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
