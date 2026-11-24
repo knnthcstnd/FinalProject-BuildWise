@@ -1,4 +1,4 @@
-# BuildWise PC Prototype
+# FinalProject-BuildWise
 
 Responsive front-end prototype for Progress Report 2.
 
