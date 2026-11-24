@@ -36,7 +36,7 @@ const products = [
     price: 22995,
     spec: '8GB GDDR6 • DLSS 3 • 160W',
     symbol: 'RTX',
-    image: 'images/4060TI.png'
+    image: 'images/rtx40608gb.png'
   },
 
   {
